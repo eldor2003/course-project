@@ -6,7 +6,7 @@ const Courses = () => {
 	return (
 		<>
 			<Header />
-			<div className='courses-container'>
+			<div className='courses-container container'>
 				<CourseHeader />
 				<Content />
 			</div>

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import "./style.css";
+import "./style.scss";
 import Link from "next/link";
 const Breadcrumps = () => {
 	return (

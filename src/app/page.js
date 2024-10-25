@@ -1,5 +1,4 @@
 "use client";
-import "./main.scss";
 
 import MainPage from "@/pages/MainPage";
 

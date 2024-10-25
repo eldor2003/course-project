@@ -1,5 +1,5 @@
 "use client";
-import "./modal.css";
+import "./modal.scss";
 import Image from "next/image";
 import Accordion from "./accordion";
 import { useState } from "react";

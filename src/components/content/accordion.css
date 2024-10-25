@@ -1,0 +1,83 @@
+.accordion{
+    padding: 20px 0px;
+}
+.accordion-title{
+    color: #000;
+    margin-bottom: 24px;
+
+/* H3 */
+font-family: Roboto;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: 130%; /* 41.6px */
+}
+.accordion-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0px;
+}
+.accordion-body {
+  display: flex;
+  flex-direction: column;
+}
+.accordion-items {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  overflow: hidden;
+  box-sizing: border-box;
+  max-height: 0; /* Yashirin holda */
+  transition: max-height 0.3s ease;
+}
+.accordion-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--Gray-1);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.accordion-button > span {
+  color: var(--Almost-black);
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+}
+.accordion-items.open {
+    max-height: 96px;
+}
+
+
+.clear-btn {
+  width: 50%;
+  padding: 14px 16px;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid var(--Prim);
+  color: var(--Prim);
+  background: transparent;
+}
+.submit-btn {
+  border-radius: 8px;
+  background: var(--Prim);
+  border: 1px solid var(--Prim);
+  color: white;
+  width: 50%;
+  padding: 14px 16px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.btn-group{
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}

@@ -1,13 +1,17 @@
-import React from 'react'
+import React from "react";
 import "./style.css";
-import Tags from './tags';
+import Tags from "./tags";
+import Breadcrumps from "../breadcrump";
 
 const CourseHeader = () => {
   return (
-    <section className='courses-header-container'>
-      <h1 className='course-header'>Каталог онлайн-курсов</h1>
-      <Tags/>
-    </section>
-  )
-}
-export default CourseHeader
+    <div>
+      <Breadcrumps />
+      <section className="courses-header-container">
+        <h1 className="course-header">Каталог онлайн-курсов</h1>
+        <Tags />
+      </section>
+    </div>
+  );
+};
+export default CourseHeader;

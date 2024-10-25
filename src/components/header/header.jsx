@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Link from "next/link";
 import "./header.scss";
@@ -23,13 +24,19 @@ const Header = () => {
 					<div className={`mobile_wrapper ${menuOpen ? "active" : ""}`}>
 						<ul className='header_navs'>
 							<li>
-								<Link href='/'>Главная</Link>
+								<Link href='/' onClick={handleCloseClick}>
+									Главная
+								</Link>
 							</li>
 							<li>
-								<Link href='/'>О нас</Link>
+								<Link href='/courses' onClick={handleCloseClick}>
+									О нас
+								</Link>
 							</li>
 							<li>
-								<Link href='/course-page'>Пакеты</Link>
+								<Link href='/course' onClick={handleCloseClick}>
+									Пакеты
+								</Link>
 							</li>
 						</ul>
 						<div className='header_login'>

@@ -22,7 +22,7 @@
   transition: max-height 0.3s ease;
 }
 .accordion-content.open {
-  max-height: 106px;
+  max-height: 120px;
 }
 .accordion-item {
   display: flex;

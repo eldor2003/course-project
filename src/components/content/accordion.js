@@ -4,7 +4,7 @@ import "./accordion.css";
 import image from "@/assets/top.png";
 import { useState } from "react";
 
-const Accordion = () => {
+const Accordion = ({inputKey}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleAccordion = () => {
@@ -29,16 +29,16 @@ const Accordion = () => {
       </div>
       <ul className={`accordion-content ${isOpen ? "open" : ""}`}>
         <li className="accordion-item">
-          <input type="checkbox" className="checkbox" id="check-1" />
-          <label htmlFor="check-1">Любое название фильтра</label>
+          <input type="checkbox" className="checkbox" id={`checked-${inputKey[0]}`} />
+          <label htmlFor={`checked-${inputKey[0]}`}>Любое название фильтра</label>
         </li>
         <li className="accordion-item">
-          <input type="checkbox" className="checkbox" id="check-2" />
-          <label htmlFor="check-2">Активный фильтр</label>
+          <input type="checkbox" className="checkbox" id={`checked-${inputKey[1]}`} />
+          <label htmlFor={`checked-${inputKey[1]}`}>Активный фильтр</label>
         </li>
         <li className="accordion-item">
-          <input type="checkbox" className="checkbox" id="check-3" />
-          <label htmlFor="check-3">Любое название фильтра</label>
+          <input type="checkbox" className="checkbox" id={`checked-${inputKey[2]}`} />
+          <label htmlFor={`checked-${inputKey[2]}`}>Любое название фильтра</label>
         </li>
       </ul>
       <div className="line"></div>

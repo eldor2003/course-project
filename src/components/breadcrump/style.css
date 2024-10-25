@@ -1,0 +1,12 @@
+.breadcrump{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 24px 0px;
+}
+@media screen and (max-width:600px) {
+    .breadcrump{
+        margin-top: 12px;
+        margin-bottom: 16px;
+    }
+}

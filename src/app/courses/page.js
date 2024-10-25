@@ -1,3 +1,4 @@
+import Breadcrumps from '@/components/breadcrump'
 import Content from '@/components/content'
 import CourseHeader from '@/components/courses-header'
 

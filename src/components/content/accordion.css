@@ -1,0 +1,63 @@
+.accordion-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--Almost-black);
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  margin-bottom: 0px;
+  transition: margin-bottom 0.3s ease;
+}
+.accordion-content {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  overflow: hidden;
+  box-sizing: border-box;
+  max-height: 0;
+  transition: max-height 0.3s ease;
+}
+.accordion-content.open {
+  max-height: 120px;
+}
+.accordion-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--Gray-1);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.clear-btn {
+  width: 50%;
+  padding: 14px 16px;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid var(--Prim);
+  color: var(--Prim);
+  background: transparent;
+}
+.submit-btn {
+  border-radius: 8px;
+  background: var(--Prim);
+  border: 1px solid var(--Prim);
+  color: white;
+  width: 50%;
+  padding: 14px 16px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}

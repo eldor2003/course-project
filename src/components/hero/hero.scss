@@ -1,5 +1,6 @@
 // hero
 .hero {
+	padding-top: 25px;
 	margin-bottom: 125px;
 	.title {
 		margin-bottom: 40px;
@@ -59,6 +60,9 @@
 			max-width: 15px;
 			max-height: 19px;
 		}
+	}
+	.hero {
+		padding-top: 0;
 	}
 	.hero,
 	.tarif {

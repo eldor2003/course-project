@@ -1,12 +1,15 @@
 .modal{
+    transition: right 0.3s ease;
+}
+.open-modal{
     padding: 0px 15px;
-    padding-top: 30px ;
+    padding-top: 44px ;
     position: fixed;
     width: 100vw;
     height: 100vh;
     overflow-y: auto;
     top: 0;
-    left: 0;
+    right: 0;
     background-color: white;
 }
 .close-btn{
@@ -14,3 +17,24 @@
     top: 12px;
     right: 12px;
 }
+.close-modal{
+        padding: 0px 15px;
+        padding-top: 44px ;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        overflow-y: auto;
+        top: 0;
+        right: -100%;
+        background-color: white;
+
+}
+.modal-title {
+    color: #000;
+    margin-bottom: 24px;
+    font-family: Roboto;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+  }

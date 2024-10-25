@@ -1,36 +1,28 @@
-.accordion{
-    padding: 20px 0px;
-}
-.accordion-title{
-    color: #000;
-    margin-bottom: 24px;
-
-/* H3 */
-font-family: Roboto;
-font-size: 32px;
-font-style: normal;
-font-weight: 700;
-line-height: 130%; /* 41.6px */
-}
-.accordion-button {
+.accordion-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: var(--Almost-black);
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
   margin-bottom: 0px;
+  transition: margin-bottom 0.3s ease;
 }
-.accordion-body {
-  display: flex;
-  flex-direction: column;
-}
-.accordion-items {
+.accordion-content {
   list-style-type: none;
   display: flex;
   flex-direction: column;
   gap: 12px;
   overflow: hidden;
   box-sizing: border-box;
-  max-height: 0; /* Yashirin holda */
+  max-height: 0;
   transition: max-height 0.3s ease;
+}
+.accordion-content.open {
+  max-height: 106px;
 }
 .accordion-item {
   display: flex;
@@ -43,18 +35,6 @@ line-height: 130%; /* 41.6px */
   font-weight: 400;
   line-height: 150%;
 }
-.accordion-button > span {
-  color: var(--Almost-black);
-  font-family: Roboto;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 130%;
-}
-.accordion-items.open {
-    max-height: 96px;
-}
-
 
 .clear-btn {
   width: 50%;
@@ -76,8 +56,8 @@ line-height: 130%; /* 41.6px */
   font-size: 16px;
   font-weight: 700;
 }
-.btn-group{
-    display: flex;
-    justify-content: space-between;
-    gap: 8px;
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
 }

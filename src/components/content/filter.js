@@ -30,7 +30,7 @@ const Filter = ({ last }) => {
 };
 
 const Filters = () => {
-  const [isOpen, setIsOpen] = useState(true)
+  const [isOpen, setIsOpen] = useState(false)
 
   const toggleModal = () => {
     setIsOpen(!isOpen);
@@ -43,11 +43,19 @@ const Filters = () => {
         <Filter />
         <Filter last={true} />
       </div>
-      <button className="filter-btn">Открыть фильтры</button>
+      <button className="filter-btn" onClick={toggleModal}>Открыть фильтры</button>
 
-      <div className="modal">
+      <div className={`modal ${isOpen ? "open-modal": "close-modal"}`}>
         <Image src={X} className={`close-btn`} onClick={toggleModal}/>
+        <h1 className="modal-title">Фильтры</h1>
+
         <Accordion/>
+        <Accordion/>
+        <Accordion/>
+        <div className="btn-group">
+        <button className="clear-btn">Очистить</button>
+        <button className="submit-btn">Применить</button>
+      </div>
       </div>
 
     </>

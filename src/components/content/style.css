@@ -146,6 +146,7 @@ line-height: 150%; /* 24px */
 @media screen and (max-width: 600px) {
   .courses-content {
     flex-direction: column;
+    gap: 24px;
   }
   .filter-container {
     display: none;

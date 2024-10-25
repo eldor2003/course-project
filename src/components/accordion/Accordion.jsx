@@ -4,7 +4,7 @@ import { useState } from "react";
 import "./accordion.scss";
 
 const Accordion = ({ title, items }) => {
-	const [isOpen, setIsOpen] = useState(false);
+	const [isOpen, setIsOpen] = useState(true);
 	const toggleAccordion = () => {
 		setIsOpen(!isOpen);
 	};
@@ -19,14 +19,20 @@ const Accordion = ({ title, items }) => {
 				/>
 			</div>
 			{isOpen && (
-				<div className='accordion-content'>
-					<div className='item-list'>
+				<div className='accordion_content'>
+					<div className='item_list'>
 						{items.map((item, index) => (
 							<div key={index} className='item'>
 								<img src={item.image} alt={item.title} className='image' />
 								<div className='details'>
-									<h3>{item.title}</h3>
-									<p>{item.duration}</p>
+									<div className='detail_top'>
+										<p className='detail_number'># {item.number} </p>
+										<div className='detail_time'>
+											<img src='./images/history.svg' alt='' />
+											<span>{item.duration}</span>
+										</div>
+									</div>
+									<h3 className='detail_title'>{item.title}</h3>
 								</div>
 							</div>
 						))}

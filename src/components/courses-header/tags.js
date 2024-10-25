@@ -9,15 +9,15 @@ const Tag = ({label, active}) => {
 const Tags = () => {
   return (
     <div className='tags'>
-    <Tag label={'Обычный тег'}/>
-    <Tag label={'Активный тег'} active={true}/>
-    <Tag label={'Обычный тег'}/>
-    <Tag label={'Обычный тег'}/>
-    <Tag label={'Обычный тег'}/>
-    <Tag label={'Обычный тег'}/>
-    <Tag label={'Обычный тег'}/>
-    <Tag label={'Обычный тег'}/>
-    <Tag label={'Обычный тег'}/>
+    <Tag label={'Программирование'}/>
+    <Tag label={'Все курсы'} active={true}/>
+    <Tag label={'Дизайн'}/>
+    <Tag label={'Аналитика'}/>
+    <Tag label={'Маркетинг'}/>
+    <Tag label={'Финансы'}/>
+    <Tag label={'Игры'}/>
+    <Tag label={'Школа дронов'}/>
+    <Tag label={'Хобби и увлечения'}/>
     <Tag label={'Обычный тег'}/>
     <Tag label={'Обычный тег'}/>
     <Tag label={'Обычный тег'}/>

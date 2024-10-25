@@ -10,7 +10,7 @@ const Card = ({title, text, bg, img}) => {
         </div>
         <p className="card-text">{text}</p>
       </div>
-      <Image src={img} className="image"/>
+      <Image src={img} alt="imag" className="image"/>
     </div>
   );
 };

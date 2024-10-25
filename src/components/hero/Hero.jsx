@@ -36,6 +36,7 @@ const Hero = () => {
 								width={21}
 								height={27}
 								layout='intrinsic'
+								alt='image'
 							/>
 						</button>
 					)}

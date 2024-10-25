@@ -23,7 +23,15 @@ const Accordion = ({ title, items }) => {
 					<div className='item_list'>
 						{items.map((item, index) => (
 							<div key={index} className='item'>
-								<img src={item.image} alt={item.title} className='image' />
+								<div className='main_img'>
+									<img src={item.image} alt={item.title} className='image' />
+									{index == 0 && (
+										<div className='seen'>
+											<img src='./images/check.svg' alt='' />
+											<p className='seen_title'>Просмотренно</p>
+										</div>
+									)}
+								</div>
 								<div className='details'>
 									<div className='detail_top'>
 										<p className='detail_number'># {item.number} </p>

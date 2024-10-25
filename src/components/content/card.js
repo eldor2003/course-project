@@ -1,4 +1,6 @@
-const Card = ({title, text, bg}) => {
+import Image from "next/image";
+
+const Card = ({title, text, bg, img}) => {
   return (
     <div className="courses-card" style={{backgroundColor:bg}}>
       <div className="card-content">
@@ -8,7 +10,7 @@ const Card = ({title, text, bg}) => {
         </div>
         <p className="card-text">{text}</p>
       </div>
-      <div className="image"></div>
+      <Image src={img} className="image"/>
     </div>
   );
 };

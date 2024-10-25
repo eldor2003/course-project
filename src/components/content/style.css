@@ -87,12 +87,8 @@ line-height: 150%; /* 24px */
 }
 .image {
   max-width: 209px;
-  width: 40%;
+  width: 45%;
   height: 200px;
-  background: url("../../assets/image\ 1.png") lightgray -47px 0px / 122.488% 192%
-    no-repeat;
-  background-size: cover;
-  background-position: right;
 }
 .card-content {
   flex: 1;

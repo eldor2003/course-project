@@ -11,14 +11,18 @@ import { Pagination } from "swiper/modules";
 import TarifItem from "../tarifItem/TarifItem";
 
 export default function TarifSwiper() {
-	const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
-
-	const handleResize = () => {
-		setIsMobile(window.innerWidth <= 768);
-	};
+	const [isMobile, setIsMobile] = useState(false);
 
 	useEffect(() => {
+		const handleResize = () => {
+			setIsMobile(window.innerWidth <= 768);
+		};
+
+		// Dastlabki o'lchamni olish
+		handleResize();
+
 		window.addEventListener("resize", handleResize);
+
 		return () => window.removeEventListener("resize", handleResize);
 	}, []);
 
